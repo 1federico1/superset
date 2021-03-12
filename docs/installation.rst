@@ -282,8 +282,7 @@ Configuration behind a load balancer
 If you are running superset behind a load balancer or reverse proxy (e.g. NGINX
 or ELB on AWS), you may need to utilise a healthcheck endpoint so that your
 load balancer knows if your superset instance is running. This is provided
-at ``/health`` which will return a 200 response containing "OK" if the
-the webserver is running.
+at ``/health`` which will return a 200 response containing "OK" if the webserver is running.
 
 If the load balancer is inserting X-Forwarded-For/X-Forwarded-Proto headers, you
 should set `ENABLE_PROXY_FIX = True` in the superset config file to extract and use
